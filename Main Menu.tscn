@@ -36,4 +36,10 @@ material/0 = SubResource( 3 )
 [node name="CollisionShape" type="CollisionShape" parent="main game/Floor0/StaticBody"]
 shape = SubResource( 2 )
 
+[node name="DirectionalLight" type="DirectionalLight" parent="main game/Floor0"]
+transform = Transform( 0.732572, 0.349428, 0.584156, -0.0332518, -0.838787, 0.543443, 0.679877, -0.417535, -0.602853, 14.6939, 15.1232, -15.1896 )
+shadow_enabled = true
+shadow_bias = 0.0
+shadow_reverse_cull_face = true
+
 [connection signal="pressed" from="Start" to="Start" method="_on_Start_pressed"]
